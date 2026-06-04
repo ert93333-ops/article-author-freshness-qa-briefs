@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article Structured Data Freshness Checklist</title>
+    <meta
+      name="description"
+      content="A practical checklist for Article, NewsArticle, BlogPosting, dateModified, author URL, image, canonical, paywall, and owner handoff QA."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/article-author-freshness-qa-briefs/article-structured-data-checklist.html">
+    <meta property="og:title" content="Article structured data freshness checklist">
+    <meta property="og:description" content="Use this prelaunch checklist to catch article freshness, byline, image, canonical, paywall, and owner handoff gaps.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ert93333-ops.github.io/article-author-freshness-qa-briefs/article-structured-data-checklist.html">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#checklist">Skip to checklist</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Article Author Freshness QA Briefs home">
+          <span class="brand-mark" aria-hidden="true">ART</span>
+          <span>Article Author Freshness QA Briefs</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html#workflow">Auditor</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#waitlist">Early access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section compact-hero">
+        <div class="shell">
+          <div class="hero-copy reveal is-visible">
+            <p class="eyebrow">SEO test asset</p>
+            <h1>Article structured data freshness checklist</h1>
+            <p class="hero-subtitle">
+              A public checklist for teams checking Article, NewsArticle, BlogPosting, dateModified,
+              author URL, image, canonical, paywall, and owner handoff issues before publishing.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="index.html#workflow">Run the article auditor</a>
+              <a class="button secondary" href="index.html#waitlist">Request early access</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="checklist">
+        <div class="shell resources-layout">
+          <div class="section-heading reveal is-visible">
+            <p class="eyebrow">Checklist</p>
+            <h2>Prelaunch article structured data QA</h2>
+            <p>Use this with pasted samples, visible page notes, editorial notes, and CMS template notes. It is not a crawler, Google News eligibility checker, or Rich Results Test replacement.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal is-visible">
+              <h3>1. Confirm the article entity</h3>
+              <p>Use `Article`, `NewsArticle`, or `BlogPosting` for article pages. Do not mark up listing pages, tag pages, or unrelated landing pages as one article.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>2. Match the visible headline</h3>
+              <p>Compare schema `headline` with the visible H1/title. Flag stale migration titles, truncated template headlines, and syndicated rewrites.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>3. Review published and updated dates</h3>
+              <p>Check `datePublished` and `dateModified` against visible publish/update notes. Heavy revisions need a deliberate freshness decision.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>4. Check author identity fields</h3>
+              <p>Each visible author should map to an author object. Prefer a clear `Person` or `Organization` type plus name and a valid `url` or `sameAs` handoff.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>5. Inspect article images</h3>
+              <p>Confirm the Article image field maps to the intended hero or representative image, not a fallback, placeholder, default CMS image, or unrelated thumbnail.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>6. Resolve canonical and syndication notes</h3>
+              <p>Compare `mainEntityOfPage`, `url`, `@id`, visible canonical notes, old URLs, syndicated source notes, and migration ownership.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>7. Flag gated-content markup gaps</h3>
+              <p>If notes mention paid, member-only, subscriber-only, or registration-gated sections, confirm `isAccessibleForFree` and `hasPart` decisions are owned.</p>
+            </article>
+            <article class="feature-card reveal is-visible">
+              <h3>8. Assign cleanup owners</h3>
+              <p>Name the editorial, frontend, CMS template, syndication, paywall, and SEO owners before the article or migration goes live.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell resources-layout">
+          <div class="section-heading reveal is-visible">
+            <p class="eyebrow">Copy block</p>
+            <h2>Quick handoff template</h2>
+          </div>
+          <div class="brief-output">
+            <p><strong>Article freshness QA owner handoff:</strong></p>
+            <ul>
+              <li>Article type and headline parity owner:</li>
+              <li>datePublished/dateModified owner:</li>
+              <li>Author name, type, url, and sameAs owner:</li>
+              <li>Article image owner:</li>
+              <li>Canonical/syndication owner:</li>
+              <li>Paywall markup owner:</li>
+              <li>SEO final review owner:</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Article structured data checklist</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+  </body>
+</html>
