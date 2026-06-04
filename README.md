@@ -26,7 +26,7 @@ The landing page includes pricing hypothesis, local purchase-intent capture, a p
 
 ## Marketing asset
 
-- Pending first public checklist Gist after deployment.
+- [Article structured data freshness checklist Gist](https://gist.github.com/ert93333-ops/1e39f26c30dc1ea57f2bf18077b0988e)
 
 ## Marketing test URLs
 
